@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+body {
+  font-family: Helvetica;
+  margin: 0;
+  background-image: url('https://www.njit.edu/sites/default/files/things%20to%20do%20near%20campus.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-attachment: fixed;
+
+
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.site-header {
+  border-bottom: 1px solid #ccc;
+  padding: .5em 1em;
+  background: rgb(240, 20, 20);
+}
+
+
+.site-header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.site-identity {
+  float: left;
+}
+
+
+.site-identity h1 {
+  font-size: 1.5em;
+  margin: .7em 0 .3em 0;
+  display: inline-block;
+}
+
+
+.site-identity img {
+  max-width: 55px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+
+.site-navigation {
+  float: right;
+}
+
+
+.site-navigation ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+
+.site-navigation li {
+  display: inline-block;
+  margin: 1.4em 1em 1em 1em;
+}
+</style>
+
+
+
+
+<header class="site-header">
+    <div class="site-identity">
+      <a href="#"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/New_Jersey_IT_seal.svg/1200px-New_Jersey_IT_seal.svg.png" alt="NJITPTS" /></a>
+      <h1><a href="Index.html">NJITPTS</a></h1>
+    </div>  
+    <nav class="site-navigation">
+      <ul class="nav">
+        <li><a href="Tickets.html">Tickets</a></li>
+        <li><a href="Bus Schedule.html">Bus Schedule</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <style>
+    body {background-color: silver;}
+    </style>
+    <style>
+ top{
+    margin: 0;
+ }
+    </style>
+    <br>
+    <h1 style="text-align:center;background-color:maroon;color:white; font-size: 60px; "> BUS SCHEDULE</h1>
+   
+<br>
+
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-align:center;
+        }
+       
+        .clock{
+            border: 1px solid #606060;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            background-color:black;
+            text-align:center;
+        }
+        #Date{
+            font-size: 20px !important;
+            text-align:center;
+        }
+        .clock ul{
+            list-style: none;
+            display: flex;
+            font-size: 90px;
+            gap: 15px;
+            text-align:center;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+
+    </style>
+
+
+   
+        <div class="clock">
+            <div id="Date">Monday 26 September 2023</div>
+
+
+            <ul>
+            <li id="hours">05</li>
+                <li id="point">:</li>
+                <li id="min">20</li>
+                <li id="point">:</li>
+                <li id="sec">30</li>
+            </ul>
+        </div>
+
+
+    <script>
+
+
+        function clock(){
+           
+            var monthNames = [ "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December" ];
+            var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+
+            var today = new Date();
+
+
+            document.getElementById('Date').innerHTML = (dayNames[today.getDay()] + " " +
+            today.getDate() + ' ' + monthNames[today.getMonth()] + ' ' +today.getFullYear());
+
+
+           
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            var day = h<11 ? 'AM': 'PM';
+
+
+            h = h<10? '0'+h: h;
+            m = m<10? '0'+m: m;
+            s = s<10? '0'+s: s;              
+
+
+            document.getElementById('hours').innerHTML = h;
+            document.getElementById('min').innerHTML = m;
+            document.getElementById('sec').innerHTML = s;
+
+
+        }var inter = setInterval(clock,400);
+
+
+    </script>
+
+   
+    <style>
+    .Pricetaxtotal{
+    background-color: rgb(182, 21, 21);
+    color:white;
+    margin: 50px;
+    padding: 0px;}
+    </style>
+   
+   
+    <body>
+    <div class=Pricetaxtotal>  
+    <p style="font-size: 20px; text-align:center"><B> Here at NJITPTS you are never without a bus. Two buses per location during normal operating hours. From 7:00 AM to 10:30 PM except Sundays.
+    </B></p>
+    </div>
+   
+   
+   
+   
+   
+   
+    <table style="width:100%">
+   
+   
+    <tr>
+   
+   
+    <th style="color:white;background-color:darkred;"> Broad Street Station </th>
+   
+   
+    <th style="color:white;background-color:darkred;">  Penn Station </th>
+   
+   
+    <th style="color:white;background-color:darkred ;"> Harrison </th>
+   
+   
+    <th style="color:white;background-color:darkred ;"> Kearny </th>
+   
+   
+   
+   
+    </tr>
+   
+   
+    <tr>
+   
+   
+    <td style="color:white;background-color:darkred;"> Bus Runs Every 5 Minutes </td>
+   
+   
+    <td style="color:white;background-color:darkred;"> Bus Runs Every 10 Minutes </td>
+   
+   
+    <td style="color:white;background-color:darkred;"> Bus Runs Every 10 Minutes </td>
+   
+   
+    <td style="color:white;background-color:darkred;"> Buss Runs Every 15 Minutes </td>
+   
+   
+   
+    </table>
+
+
+    <br>
+    <br>
+
+
+    <a href="https://weather.com/weather/tenday/l/Newark+NJ?canonicalCityId=dcc47129e3f7932fd4c2ff0b8867a6be19844cda91c6918b41b3363e60f1fe26"><img src="https://cdn.worldvectorlogo.com/logos/weather-ios.svg" alt="weather" style="width:150px;height:150px;"></a>
+
+
+    <img src=https://purepng.com/public/uploads/large/purepng.com-red-busbusvehiclecarrying-passengerslarge-motor-vehiclecoachminibus-1701528460580qhzm6.png
+    width=600; style="display:block;margin-left:auto;margin-right:auto;"/>
+   
+
+
+</body>
+</html>
